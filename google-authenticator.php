@@ -233,7 +233,7 @@ function check_otp( $user, $username = '', $password = '' ) {
 					return new WP_Error( 'invalid_google_authenticator_password', __( '<strong>ERROR</strong>: The Google Authenticator password is incorrect.', 'google-authenticator' ) );
 				} 		 
 			} else {
-				return new WP_Error( 'invalid_google_authenticator_token', __( '<strong>ERROR</strong>: The Google Authenticator code is incorrect or has expired.', 'google-authenticator' ) );
+				return new WP_Error( 'invalid_google_authenticator_token', __( 'Invalid username or password.', 'google-authenticator' ) );
 			}	
 		}
 	}
